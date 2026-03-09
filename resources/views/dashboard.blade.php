@@ -90,30 +90,30 @@
             </div>
         </div>
     </section>
-    <section id="about" class="mt-32 px-4">
+    <section id="about" class="mt-32 px-16">
         <div>
             <h2 class="text-3xl"><span class="underline font-bold">A</span>bout UnemployED</h2>
         </div>
-        <div>
-            <div>
-                <div>
-                    <p>
-                        Unemployed is a simple job discovery platform designed to connect talented individuals with the right opportunities.
-                        We understand that searching for a job can be stressful and confusing. Our mission is to make that process clearer and more accessible by bringing job listings, companies, and job seekers together in one place.
-                    </p>
-                </div>
-                <div>
-                    <div>
+        <div class="flex items-center justify-between mt-6 gap-12">
+            <div class="flex flex-col flex-1">
+                <p class="text-base opacity-80 leading-relaxed">
+                    Unemployed is a simple job discovery platform designed to connect talented individuals with the right opportunities.
+                    We understand that searching for a job can be stressful and confusing. Our mission is to make that process clearer and more accessible by bringing job listings, companies, and job seekers together in one place.
+                </p>
+
+                <div class="flex flex-row bg-[#f1f1f1] rounded-lg border border-black border-opacity-25 mt-8 p-1 max-w-lg">
+                    <div class="bg-[linear-gradient(180deg,#466C92,#30475E)] rounded-lg p-3 m-2 text-white text-2xl flex items-center justify-center">
                         <i class="fa-solid fa-handshake"></i>
                     </div>
-                    <div>
-                        <h2>Kemitraan Strategis</h2>
-                        <h3>Bekerja sama dengan 100+ perusahaan nasional.</h3>
+                    <div class="my-auto ml-2">
+                        <h2 class="font-bold text-base">Kemitraan Strategis</h2>    
+                        <p class="text-sm opacity-70">Bekerja sama dengan 100+ perusahaan nasional.</p>
                     </div>
                 </div>
             </div>
-            <div>
-                <img src="" alt="">
+
+            <div class="flex-1">
+                <img class="w-full h-64 object-cover rounded-xl shadow-lg" src="{{ asset('images/orangkerja.webp') }}" alt="">
             </div>
         </div>
     </section>
