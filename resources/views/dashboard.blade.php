@@ -106,7 +106,7 @@
                         <i class="fa-solid fa-handshake"></i>
                     </div>
                     <div class="my-auto ml-2">
-                        <h2 class="font-bold text-base">Kemitraan Strategis</h2>    
+                        <h2 class="font-bold text-base">Kemitraan Strategis</h2>
                         <p class="text-sm opacity-70">Bekerja sama dengan 100+ perusahaan nasional.</p>
                     </div>
                 </div>
@@ -114,6 +114,53 @@
 
             <div class="flex-1">
                 <img class="w-full h-64 object-cover rounded-xl shadow-lg" src="{{ asset('images/orangkerja.webp') }}" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="discover" class="mt-32 px-16">
+        <div class="justify-between flex">
+            <h2 class="text-3xl"><span class="underline font-bold">D</span>iscover da Job</h2>
+            <button class="text-sm p-2 border border-black rounded-lg shadow-lg hover:bg-black hover:scale-110 hover:text-white transition-all"><a href="">View All <i class="fa-solid fa-arrow-right"></i></a></button>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mt-6">
+            <div class="p-5 border border-black border-opacity-25 rounded-lg shadow-lg flex flex-col gap-3">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-bold text-xl">Senior Vue Dev</h3>
+                        <p class="text-sm opacity-70">PT. Maju Mundur <span>- Jakarta</span></p>
+                    </div>
+                    <span class="p-2 bg-[#D1FAE5] text-black rounded-full text-xs">Full-Time</span>
+                </div>
+                <hr class="border-gray-200">
+                <div class="flex justify-end">
+                    <button class="border border-black border-opacity-75 rounded-lg p-2 text-sm hover:bg-black hover:scale-110 hover:text-white transition-all"><a href="">View Details</a></button>
+                </div>
+            </div>
+            <div class="p-5 border border-black border-opacity-25 rounded-lg shadow-lg flex flex-col gap-3">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-bold text-xl">Senior Vue Dev</h3>
+                        <p class="text-sm opacity-70">PT. Maju Mundur <span>- Jakarta</span></p>
+                    </div>
+                    <span class="p-2 bg-[#FAD1E6] text-black rounded-full text-xs">Part-Time</span>
+                </div>
+                <hr class="border-gray-200">
+                <div class="flex justify-end">
+                    <button class="border border-black border-opacity-75 rounded-lg p-2 text-sm hover:bg-black hover:scale-110 hover:text-white transition-all"><a href="">View Details</a></button>
+                </div>
+            </div>
+            <div class="p-5 border border-black border-opacity-25 rounded-lg shadow-lg flex flex-col gap-3">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-bold text-xl">Senior Vue Dev</h3>
+                        <p class="text-sm opacity-70">PT. Maju Mundur <span>- Jakarta</span></p>
+                    </div>
+                    <span class="p-2 bg-[#E6E6E6] text-black rounded-full text-xs">Contract</span>
+                </div>
+                <hr class="border-gray-200">
+                <div class="flex justify-end">
+                    <button class="border border-black border-opacity-75 rounded-lg p-2 text-sm hover:bg-black hover:scale-110 hover:text-white transition-all"><a href="">View Details</a></button>
+                </div>
             </div>
         </div>
     </section>
