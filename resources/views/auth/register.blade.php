@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="{{ asset('images/icon.png') }}">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <style>
@@ -25,7 +26,7 @@
     <div>
         <ul>
             @foreach ($errors->all() as $error)
-            <li class="text-center bg-[#F05454] rounded-lg border border-black justify-center mx-96 my-2 p-2 text-white">{{ $error }} <button>X</button></li>
+            <li class="text-center bg-[#F05454] rounded-lg border border-black justify-center mx-96 my-2 p-2 text-white">{{ $error }}</li>
             @endforeach
         </ul>
     </div>

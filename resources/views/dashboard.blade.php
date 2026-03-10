@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UnemployED</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/icon.png') }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <link
         rel="stylesheet"
@@ -17,6 +18,12 @@
     <style>
         body {
             font-family: "Poppins", sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 180px;
         }
     </style>
 </head>
@@ -51,15 +58,16 @@
         </div>
         <div
             class="flex flex-row gap-3 border-l border-black border-opacity-25 pl-9 text-sm">
-            <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Profile</a>
+            <!-- <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Profile</a> -->
             <form action="/logout" method="POST">
                 @csrf
-                <button type="submit" class="text-[#F05454]">
+                <button type="submit" class="text-[#F05454] p-2 border border-[#F05454] rounded-lg hover:bg-[#F05454] hover:text-white hover:scale-110 transition-all">
                     <i class="fa-solid fa-user"></i> Logout
                 </button>
             </form>
         </div>
     </nav>
+
     <section id="home" class="max-w-6xl mx-auto mt-40 px-6">
         <div
             class="flex items-center justify-between bg-[linear-gradient(180deg,#466C92,#30475E)] rounded-3xl px-16 py-16 text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.25)]">
@@ -90,6 +98,7 @@
             </div>
         </div>
     </section>
+
     <section id="about" class="mt-32 px-16">
         <div>
             <h2 class="text-3xl"><span class="underline font-bold">A</span>bout UnemployED</h2>
@@ -117,6 +126,7 @@
             </div>
         </div>
     </section>
+
     <section id="discover" class="mt-32 px-16">
         <div class="justify-between flex">
             <h2 class="text-3xl"><span class="underline font-bold">D</span>iscover da Job</h2>
@@ -129,7 +139,7 @@
                         <h3 class="font-bold text-xl">Senior Vue Dev</h3>
                         <p class="text-sm opacity-70">PT. Maju Mundur <span>- Jakarta</span></p>
                     </div>
-                    <span class="p-2 bg-[#D1FAE5] text-black rounded-full text-xs">Full-Time</span>
+                    <span class="p-2 bg-[#D1FAE5] text-black rounded-full text-xs shadow-sm">Full-Time</span>
                 </div>
                 <hr class="border-gray-200">
                 <div class="flex justify-end">
@@ -142,7 +152,7 @@
                         <h3 class="font-bold text-xl">Senior Vue Dev</h3>
                         <p class="text-sm opacity-70">PT. Maju Mundur <span>- Jakarta</span></p>
                     </div>
-                    <span class="p-2 bg-[#FAD1E6] text-black rounded-full text-xs">Part-Time</span>
+                    <span class="p-2 bg-[#FAD1E6] text-black rounded-full text-xs shadow-sm">Part-Time</span>
                 </div>
                 <hr class="border-gray-200">
                 <div class="flex justify-end">
@@ -155,7 +165,7 @@
                         <h3 class="font-bold text-xl">Senior Vue Dev</h3>
                         <p class="text-sm opacity-70">PT. Maju Mundur <span>- Jakarta</span></p>
                     </div>
-                    <span class="p-2 bg-[#E6E6E6] text-black rounded-full text-xs">Contract</span>
+                    <span class="p-2 bg-[#E6E6E6] text-black rounded-full text-xs shadow-sm">Contract</span>
                 </div>
                 <hr class="border-gray-200">
                 <div class="flex justify-end">
@@ -164,6 +174,40 @@
             </div>
         </div>
     </section>
+
+    <section id="submit-job" class="mt-32 px-16 bg-[#F7F7F7] py-12">
+        <div>
+            <div>
+                <h2 class="text-3xl"><span class="underline font-bold">S</span>ubmit Your Job</h2>
+            </div>
+            <div class="flex flex-row justify-between items-center mt-6 gap-12">
+                <div>
+                    <img src="{{ asset('images/submitjob.png') }}" alt="">
+                </div>
+                <div>
+                    <div class="pb-10">
+                        <h4 class="text-xl font-light">FOUND JOB OPENING?</h4>
+                        <h3 class="text-4xl font-bold">Share It With Others</h3>
+                        <p class="text-lg">Post the opportunity and help someone escape <span class="font-bold italic">unemployment</span>.</p>
+                        <div class="flex flex-col gap-5 mt-6 mb-6">
+                            <p><span class="text-xl font-medium">120+</span> Jobs Shared</p>
+                            <p><span class="text-xl font-medium">80+</span> Active Users</p>
+                            <p><span class="text-xl font-medium">35+</span> Jobs Approved</p>
+                        </div>
+                    </div>
+                    <button>
+                        <a href="" class="border bg-black text-white border-black border-opacity-75 rounded-lg p-2 text-xl hover:bg-white hover:scale-110 hover:text-black transition-all">Submit <span class="font-light italic">job</span></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="flex flex-col items-center justify-center my-7 gap-4">
+            <img src="{{ asset('images/logo.png') }}" alt="logo" class="w-32">
+            <p class="text-sm opacity-70">© 2024 UnemployED. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
