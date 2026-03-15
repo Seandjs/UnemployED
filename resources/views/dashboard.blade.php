@@ -143,7 +143,7 @@
                 </div>
                 <hr class="border-gray-200">
                 <div class="flex justify-end">
-                    <button class="border border-black border-opacity-75 rounded-lg p-2 text-sm hover:bg-black hover:scale-110 hover:text-white transition-all"><a href="">View Details</a></button>
+                    <button class="border border-black border-opacity-75 rounded-lg p-2 text-sm hover:bg-black hover:scale-110 hover:text-white transition-all"><a href="/jobs-detail">View Details</a></button>
                 </div>
             </div>
             <div class="p-5 border border-black border-opacity-25 rounded-lg shadow-lg flex flex-col gap-3">
@@ -196,7 +196,7 @@
                         </div>
                     </div>
                     <button>
-                        <a href="" class="border bg-black text-white border-black border-opacity-75 rounded-lg p-2 text-xl hover:bg-white hover:scale-110 hover:text-black transition-all">Submit <span class="font-light italic">job</span></a>
+                        <a href="/submit-job" class="border bg-black text-white border-black border-opacity-75 rounded-lg p-2 text-xl hover:bg-white hover:scale-110 hover:text-black transition-all">Submit <span class="font-light italic">job</span></a>
                     </button>
                 </div>
             </div>

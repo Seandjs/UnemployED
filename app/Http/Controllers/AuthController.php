@@ -61,6 +61,18 @@ class AuthController extends Controller
         return view('/admin/dashboard');
     }
 
+    public function submitJob(){
+        return view('submitjob');
+    }
+
+    public function jobs(){
+        return view('jobs');
+    }
+
+    public function jobsDetail(){
+        return view('jobsdetail');
+    }
+
     public function logout(){
         Auth::logout();
         return redirect('/login');
