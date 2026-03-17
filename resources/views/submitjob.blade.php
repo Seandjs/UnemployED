@@ -36,22 +36,22 @@
         </div>
         <div class="flex flex-row gap-12 text-sm">
             <a
-                href="#home"
+                href="/dashboard#home"
                 class="relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">
                 Home
             </a>
             <a
-                href="#about"
+                href="/dashboard#about"
                 class="relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">
                 About
             </a>
             <a
-                href="#discover"
+                href="/dashboard#discover"
                 class="relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">
                 Discover
             </a>
             <a
-                href="#submit-job"
+                href="/dashboard#submit-job"
                 class="relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">
                 Submit Job
             </a>
@@ -209,6 +209,19 @@
                             <div class="flex flex-col">
                                 <label for="company-email" class="text-sm font-light">Company Email</label>
                                 <input class="border border-black rounded-md w-80 p-2 border-opacity-25 text-sm" type="email" id="company-email" name="company-email" placeholder="info@company.com" required>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row gap-6 mb-6 mt-6">
+                            <div class="flex flex-col w-full">
+                                <label for="company-logo" class="text-sm font-light">Company Logo</label>
+                                <input
+                                    class="border border-black rounded-md w-full p-2 border-opacity-25 text-sm file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:bg-[linear-gradient(180deg,#466C92,#30475E)] file:text-white file:cursor-pointer cursor-pointer"
+                                    type="file"
+                                    id="company-logo"
+                                    name="company-logo"
+                                    accept="image/png, image/jpg, image/jpeg, image/webp">
+                                <p class="text-xs opacity-50 mt-2">Upload company logo (PNG, JPG, JPEG, WEBP).</p>
                             </div>
                         </div>
 
