@@ -146,17 +146,29 @@
                     <button class="border border-black border-opacity-75 rounded-lg p-2 text-sm hover:bg-black hover:scale-110 hover:text-white transition-all"><a href="/jobs-detail">View Details</a></button>
                 </div>
             </div>
-            <div class="p-5 border border-black border-opacity-25 rounded-lg shadow-lg flex flex-col gap-3">
-                <div class="flex justify-between items-start">
-                    <div>
-                        <h3 class="font-bold text-xl">Senior Vue Dev</h3>
-                        <p class="text-sm opacity-70">PT. Maju Mundur <span>- Jakarta</span></p>
+            <div class="p-5 border border-black border-opacity-25 rounded-2xl shadow-lg flex flex-col gap-4 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 bg-white">
+                <div class="flex justify-between items-start gap-4">
+                    <div class="flex gap-4">
+                        <div class="w-14 h-14 flex items-center justify-center bg-white rounded-xl shadow border border-black border-opacity-10 p-2">
+                            <img src="{{ asset('images/laptop.png') }}" alt="logo" class="max-w-full max-h-full object-contain">
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg leading-tight">Senior Vue Dev</h3>
+                            <p class="text-sm opacity-70">
+                                PT. Maju Mundur <span>- Jakarta</span>
+                            </p>
+                        </div>
                     </div>
-                    <span class="p-2 bg-[#FAD1E6] text-black rounded-full text-xs shadow-sm">Part-Time</span>
+                    <span class="px-3 py-1 bg-[#FAD1E6] text-black rounded-full text-xs font-medium shadow-sm whitespace-nowrap">
+                        Part-Time
+                    </span>
                 </div>
                 <hr class="border-gray-200">
-                <div class="flex justify-end">
-                    <button class="border border-black border-opacity-75 rounded-lg p-2 text-sm hover:bg-black hover:scale-110 hover:text-white transition-all"><a href="">View Details</a></button>
+                <div class="flex justify-end items-center">
+                    <a href="/jobs-detail"
+                        class="border border-black border-opacity-75 rounded-lg px-4 py-2 text-sm hover:bg-black hover:text-white hover:scale-105 transition-all">
+                        View Details
+                    </a>
                 </div>
             </div>
             <div class="p-5 border border-black border-opacity-25 rounded-lg shadow-lg flex flex-col gap-3">

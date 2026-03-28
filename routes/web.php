@@ -14,7 +14,14 @@ Route::get('/register', [AuthController::class, 'tunjukinFormRegister'])->middle
 Route::post('/register', [AuthController::class, 'register'])->name('register.submit');
 
 Route::get('/dashboard', [AuthController::class, 'dashboard'])->middleware('auth');
-Route::get('/admin', [AuthController::class, 'admin'])->middleware(['auth', 'admin']);
+
+Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
+    Route::get('/', [AuthController::class, 'admin']);
+    Route::get('/manage-user', [AuthController::class, 'manageuser']);
+    Route::get('/manage-job', [AuthController::class, 'managejob']);
+    Route::get('/approval', [AuthController::class, 'approval']);
+});
+// prefix admin ini buat ngasih awalan url jadi /admin secara otomatis ke route yang ada didalamnya
 
 Route::get('/submit-job', [AuthController::class, 'submitJob'])->middleware('auth');
 Route::get('/jobs', [AuthController::class, 'jobs'])->middleware('auth');
